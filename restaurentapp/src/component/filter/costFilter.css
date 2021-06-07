@@ -1,0 +1,28 @@
+
+
+.costFilterArea{
+    margin-bottom: 6%;
+
+
+}
+.filterHeading{
+    text-align: center;
+}
+
+.sortContainer{
+    margin-bottom: 6%;
+  
+
+}
+
+@media only screen and (max-width:500px){
+    .form-check{
+        display: inline-block !important ;
+    }
+    .filterHeading{
+        text-align: left;
+    }
+    .sortContainer, .costFilterArea{
+        margin: 0%;
+    }
+}

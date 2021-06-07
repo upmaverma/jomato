@@ -1,0 +1,38 @@
+
+
+.placeOrderSection{
+    background-color: rgb(247, 225, 184);
+    padding: 10% 0 6% 0;
+}
+.placeOrderContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+@media only screen and (max-width:1024px){
+    .placeOrderSection{
+        padding-top: 12%;
+    }
+}
+@media only screen and (max-width:786px){
+    .placeOrderSection{
+        padding-top: 17%;
+    }
+}
+@media only screen and (max-width:600px){
+    .placeOrderSection{
+        padding-top: 21%;
+    }
+}
+@media only screen and (max-width:425px){
+    .placeOrderSection{
+        padding-top: 27%;
+    }
+    .placeOrderContainer{
+       width: 100%;
+    }
+}
+@media only screen and (max-width:375px){
+    .placeOrderSection{
+        padding-top: 29%;
+    }
+}

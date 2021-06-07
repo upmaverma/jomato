@@ -1,0 +1,151 @@
+.detailSection {
+  /* border: 2px solid yellow; */
+  background-color: rgb(252, 241, 214);
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+/* .detailContainer {
+  border: 2px solid red;
+} */
+.detailContent {
+  width: 80%;
+  margin: 0 auto;
+}
+.tabArea {
+  padding: 3% 0;
+  /* border: 2px solid hotpink; */
+}
+.overviewHeading {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.contactHeading {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.socialIcon {
+  font-size: larger;
+  font-weight: 900;
+}
+/* .menuContainer {
+  border: 2px solid black;
+} */
+.menuList {
+  /* border: 2px solid red; */
+  display: flex;
+}
+.gadha {
+  padding-top: 30%;
+}
+.menu {
+  width: 10%;
+}
+.menuContent {
+  background-color: rgb(248, 248, 248);
+  margin: 1%;
+  padding: 2%;
+  width: 48%;
+  display: inline-block;
+  border: 2px solid blue;
+}
+.menuDetail {
+  /* border: 2px solid hotpink; */
+  justify-content: space-between;
+  display: flex;
+}
+.menuName {
+  border: 2px solid greenyellow;
+}
+.menuPrice {
+  border: 2px solid skyblue;
+}
+.menuInfo {
+  display: none;
+}
+
+.newMenuContaine {
+  border: 2px solid sandybrown;
+}
+/* .menuDetails {
+  border: 2px solid gold;
+} */
+.newMenuList {
+  /* border: 2px solid rgb(0, 225, 255); */
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  padding: 0 2% 0 2%;
+  text-transform: capitalize;
+}
+.menuDetails h4 {
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+button.slick-arrow.slick-prev,
+button.slick-arrow.slick-next {
+  display: none !important;
+}
+button.slick-prev,
+button.slick-next {
+  background-color: black;
+  border-radius: 50%;
+}
+/* .gallerySection {
+  border: 2px solid greenyellow;
+} */
+/* .galleryContainer {
+  border: 2px solid red;
+} */
+.gallery {
+  width: 100%;
+  height: 500px;
+}
+@media only screen and (max-width: 992px) {
+  .detailSection {
+    padding-top: 11%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .detailSection {
+    padding-top: 14%;
+  }
+  .detailContent {
+    width: 98%;
+  }
+  .gallery {
+    height: 370px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .detailSection {
+    padding-top: 18%;
+  }
+  .menuList {
+    display: none;
+  }
+  .menuInfo {
+    display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .detailSection {
+    padding-top: 25%;
+  }
+  .detailContent {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .detailSection {
+    padding-top: 29%;
+  }
+  .gallery {
+    height: 270px;
+  }
+  .detailContent {
+    width: 100%;
+  }
+  .detailContainer.container {
+    padding: 0%;
+  }
+}

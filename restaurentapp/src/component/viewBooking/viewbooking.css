@@ -1,0 +1,50 @@
+.viewBookingSection {
+  height: auto;
+  padding-top: 10%;
+}
+.tableInfo {
+  display: none;
+}
+.tableSection {
+  /* border: 2px solid black; */
+  padding: 0 auto;
+}
+.tableContainer {
+  margin: 0 auto;
+  width: 80%;
+  /* border: 2px solid green; */
+}
+/* .table{
+    border: 2px solid red;
+} */
+@media screen and (max-width: 1024px) {
+  .viewBookingSection {
+    padding-top: 12%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .viewBookingSection {
+    padding-top: 20%;
+    height: 300px;
+  }
+  .table {
+    display: none;
+  }
+  .tableInfo {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .viewBookingSection {
+    padding-top: 25%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .viewBookingSection {
+    padding-top: 29%;
+  }
+  .tableSection {
+    margin: 10% auto;
+  }
+}

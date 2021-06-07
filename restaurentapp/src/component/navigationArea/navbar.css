@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  font-family: "Proza Libre", sans-serif;
+}
+.navSection {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+  font-style: italic;
+  font-variant: small-caps;
+}
+.Navigation {
+  color: greenyellow;
+  background-color: rgba(255, 191, 97);
+}
+.navbar {
+  color: greenyellow;
+  font-size: 1em;
+}
+
+.nav-link {
+  position: relative;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+a.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 1%;
+  bottom: 6%;
+  background: rgb(0, 0, 0);
+  transition: 300ms;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+}
+.userDetail {
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+.userDetail img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
