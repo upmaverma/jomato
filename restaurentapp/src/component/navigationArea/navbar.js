@@ -32,7 +32,7 @@ class navbar extends Component {
             <img
               src={this.state.imageurl}
               style={{ width: 40, height: 40 }}
-              alt="Profile_Pic"
+              alt=""
             />
             {sessionStorage.getItem("username")}
           </span>
@@ -66,7 +66,7 @@ class navbar extends Component {
       let requestedData = {
         code: code,
       };
-      fetch("http://localhost:7800/oauth", {
+      fetch("https://logingithub.herokuapp.com/oauth", {
         method: "POST",
         headers: {
           Accept: "application/json",
