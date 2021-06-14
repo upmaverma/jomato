@@ -1,7 +1,6 @@
 import React from "react";
 import { Component } from "react";
 import "./placeorder.css";
-import { Link } from "react-router-dom";
 
 const url = "https://restaurentapilive.herokuapp.com/placeorder";
 
@@ -18,11 +17,11 @@ class orderplace extends Component {
     };
   }
 
-  handleChange = (event) => {
+  handleValue = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
 
-  handleSubmit = () => {
+  handleSubmit = (event) => {
     fetch(url, {
       method: "POST",
       headers: {
@@ -30,7 +29,8 @@ class orderplace extends Component {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(this.state),
-    }).then(this.props.history.push("/viewbooking"));
+    }).then(this.props.history.push("/booked"));
+    event.preventDefault();
   };
 
   render() {
@@ -43,7 +43,7 @@ class orderplace extends Component {
                 <h2>Place your order here</h2>
               </div>
               <div className="card-body">
-                <form>
+                <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
                     <label>Restaurent Name</label>
                     <input
@@ -59,7 +59,8 @@ class orderplace extends Component {
                       className="form-control"
                       name="name"
                       value={this.state.name}
-                      onChange={this.handleChange}
+                      onChange={this.handleValue}
+                      required
                     />
                   </div>
                   <div className="form-group">
@@ -69,17 +70,20 @@ class orderplace extends Component {
                       className="form-control"
                       name="email"
                       value={this.state.email}
-                      onChange={this.handleChange}
+                      onChange={this.handleValue}
+                      required
                     />
                   </div>
                   <div className="form-group">
                     <label>Phone number</label>
                     <input
+                      required
                       type="text"
                       className="form-control"
                       name="phone"
                       value={this.state.phone}
-                      onChange={this.handleChange}
+                      onChange={this.handleValue}
+                      maxLength="10"
                     />
                   </div>
                   <div className="form-group">
@@ -89,17 +93,16 @@ class orderplace extends Component {
                       className="form-control"
                       name="cost"
                       value={this.state.cost}
-                      onChange={this.handleChange}
+                      readOnly
                     />
                   </div>
-                  <Link to={"/booked"}>
-                    <button
-                      className="btn btn-success SubmitBtn"
-                      onClick={this.handleSubmit}
-                    >
-                      Submit order
-                    </button>
-                  </Link>
+
+                  <button
+                    className="btn btn-success SubmitBtn"
+                    onSubmit={this.handleSubmit}
+                  >
+                    Submit order
+                  </button>
                 </form>
               </div>
             </div>
