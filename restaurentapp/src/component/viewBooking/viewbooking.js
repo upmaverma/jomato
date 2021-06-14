@@ -37,7 +37,6 @@ class viewbooking extends Component {
         <div className="container-fluid viewBookingSection">
           <div className="tableSection">
             <div className="tableContainer">
-              {/* <h4 className="tableInfo">check the data desktop version</h4> */}
               <table className="table table-striped table-responsive">
                 <thead>
                   <tr>

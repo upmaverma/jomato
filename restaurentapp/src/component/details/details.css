@@ -1,19 +1,14 @@
 .detailSection {
-  /* border: 2px solid yellow; */
   background-color: rgb(252, 241, 214);
   padding-top: 10%;
   padding-bottom: 5%;
 }
-/* .detailContainer {
-  border: 2px solid red;
-} */
 .detailContent {
   width: 80%;
   margin: 0 auto;
 }
 .tabArea {
   padding: 3% 0;
-  /* border: 2px solid hotpink; */
 }
 .overviewHeading,
 .contactHeading {
@@ -27,11 +22,7 @@
   font-size: larger;
   font-weight: 900;
 }
-/* .menuContainer {
-  border: 2px solid black;
-} */
 .menuList {
-  /* border: 2px solid red; */
   display: flex;
 }
 .gadha {
@@ -49,7 +40,6 @@
   border: 2px solid blue;
 }
 .menuDetail {
-  /* border: 2px solid hotpink; */
   justify-content: space-between;
   display: flex;
   text-transform: capitalize;
@@ -67,11 +57,7 @@
 .newMenuContaine {
   border: 2px solid sandybrown;
 }
-/* .menuDetails {
-  border: 2px solid gold;
-} */
 .newMenuList {
-  /* border: 2px solid rgb(0, 225, 255); */
   display: flex;
   justify-content: space-between;
   margin: 2% 0;
@@ -91,12 +77,6 @@ button.slick-next {
   background-color: black;
   border-radius: 50%;
 }
-/* .gallerySection {
-  border: 2px solid greenyellow;
-} */
-/* .galleryContainer {
-  border: 2px solid red;
-} */
 .gallery {
   width: 100%;
   height: 500px;

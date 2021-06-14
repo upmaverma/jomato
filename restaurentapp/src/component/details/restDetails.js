@@ -121,9 +121,6 @@ class details extends Component {
                             <div className="container menuContainer">
                               <div className="row">
                                 <div className="col">
-                                  {/* <p className="menuInfo">
-                                    Check out our menu in desktop version
-                                  </p> */}
                                   <div className="menuList">
                                     <div className="col-sm-12">
                                       <Menu
