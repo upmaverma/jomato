@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const Booked = () => {
   return (
@@ -7,14 +7,12 @@ const Booked = () => {
       <div className="container-fluid messageContainer">
         <div className="message">
           <h1>Congratulations! Your Order is booked now.</h1>
-        </div>
-        {/* <div className="container message">
-          <div className="msgImg">
-            <img src="https://img1.picmix.com/output/stamp/normal/3/4/8/4/1434843_2deda.gif" />
-            <h1>Congratulations! Your Order is booked now.</h1>
+          <div className="homeBtn">
+            <Link to={"/"}>
+              <button className="btn btn-warning">Go to HomePage</button>
+            </Link>
           </div>
-          <div className="messageContent"></div>
-        </div> */}
+        </div>
       </div>
     </>
   );
