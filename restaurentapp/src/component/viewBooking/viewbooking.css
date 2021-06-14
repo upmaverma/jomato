@@ -3,17 +3,25 @@
 }
 .viewBookingSection {
   height: auto;
-  padding-top: 10%;
+  padding-top: 20vh;
 }
 .tableInfo {
   display: none;
 }
 .tableSection {
   padding: 0 auto;
+  margin-bottom: 5%;
 }
 .tableContainer {
-  margin: 0 auto;
   width: 80%;
+  margin: 0 auto;
+}
+table.table.table-striped.table-responsive {
+  margin: 0 auto;
+  height: 700px;
+  width: 100%;
+  overflow: auto;
+  border: 2px solid rgb(194, 194, 194);
 }
 
 .messageContainer {
@@ -40,32 +48,16 @@
   text-align: center;
   font-size: 2.4em;
 }
-@media screen and (max-width: 1024px) {
-  .viewBookingSection {
-    padding-top: 12%;
-  }
-}
+
 @media only screen and (max-width: 768px) {
-  .viewBookingSection {
-    padding-top: 20%;
-    height: 300px;
-  }
-  .table {
-    display: none;
-  }
-  .tableInfo {
-    display: block;
+  .tableContainer {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .viewBookingSection {
-    padding-top: 25%;
-  }
-}
 @media only screen and (max-width: 425px) {
   .viewBookingSection {
-    padding-top: 29%;
+    padding: 12vh;
   }
   .tableSection {
     margin: 10% auto;
