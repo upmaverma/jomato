@@ -15,14 +15,14 @@
   padding: 3% 0;
   /* border: 2px solid hotpink; */
 }
-.overviewHeading {
-  text-transform: uppercase;
-  font-weight: 900;
-}
+.overviewHeading,
 .contactHeading {
   text-transform: uppercase;
   font-weight: 900;
+  text-decoration: underline;
+  font-size: 1.2em;
 }
+
 .socialIcon {
   font-size: larger;
   font-weight: 900;
@@ -52,6 +52,7 @@
   /* border: 2px solid hotpink; */
   justify-content: space-between;
   display: flex;
+  text-transform: capitalize;
 }
 .menuName {
   border: 2px solid greenyellow;
@@ -99,6 +100,13 @@ button.slick-next {
 .gallery {
   width: 100%;
   height: 500px;
+}
+.react-tabs__tab {
+  font-size: 1.2em;
+}
+.react-tabs__tab-panel--selected {
+  margin-top: 4%;
+  margin-left: 2%;
 }
 @media only screen and (max-width: 992px) {
   .detailSection {

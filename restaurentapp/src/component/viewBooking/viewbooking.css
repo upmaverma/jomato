@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .viewBookingSection {
   height: auto;
   padding-top: 10%;
@@ -6,17 +9,45 @@
   display: none;
 }
 .tableSection {
-  /* border: 2px solid black; */
   padding: 0 auto;
 }
 .tableContainer {
   margin: 0 auto;
   width: 80%;
-  /* border: 2px solid green; */
 }
-/* .table{
-    border: 2px solid red;
-} */
+
+.messageContainer {
+  background-color: rgb(252, 241, 214);
+  background: linear-gradient(
+      rgba(252, 241, 214, 0.118),
+      rgba(252, 241, 214, 0.118)
+    ),
+    url("https://img1.picmix.com/output/stamp/normal/3/4/8/4/1434843_2deda.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  padding-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  height: auto;
+  padding-top: 8%;
+}
+.msgImg {
+  border: 2px solid rgb(223, 21, 21);
+}
+.messageContent {
+  border: 2px solid green;
+  text-align: center;
+  padding: 0 4%;
+}
+.message h1 {
+  text-align: center;
+  font-size: 2.4em;
+}
 @media screen and (max-width: 1024px) {
   .viewBookingSection {
     padding-top: 12%;
@@ -46,5 +77,8 @@
   }
   .tableSection {
     margin: 10% auto;
+  }
+  .message h1 {
+    font-size: 1.8em;
   }
 }

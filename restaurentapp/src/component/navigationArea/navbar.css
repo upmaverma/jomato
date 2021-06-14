@@ -28,6 +28,7 @@
   color: rgb(0, 0, 0) !important;
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 a.nav-link::after {
   content: "";
@@ -50,4 +51,10 @@ a.nav-link:hover::after {
 .userDetail img {
   margin-right: 10px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.4em;
+  }
 }

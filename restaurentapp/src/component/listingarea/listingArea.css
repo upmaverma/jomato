@@ -1,5 +1,8 @@
 .listingSection {
-  padding-top: 10%;
+  padding-top: 20vh;
+}
+.imageDisplay {
+  width: 130%;
 }
 .imageDisplay img {
   border-radius: 10px;
@@ -24,7 +27,9 @@
   border-radius: 15px;
   background-color: rgb(252, 241, 214);
 }
-
+.cuisineType {
+  text-transform: capitalize;
+}
 .restaurentImage {
   width: 100%;
 }
@@ -60,6 +65,14 @@ ul.pagination li {
   .restListDisplay {
     width: 95%;
   }
+  .restaurentImage {
+    width: 100%;
+    height: 250px;
+  }
+  .restListDetail {
+    margin-left: 10%;
+    padding-left: 5%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -71,9 +84,12 @@ ul.pagination li {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
+  .imageDisplay {
+    width: 100%;
+  }
   .listingSection {
-    padding-top: 10%;
+    padding-top: 13%;
   }
   .restListDisplay {
     width: 90%;
@@ -82,38 +98,38 @@ ul.pagination li {
   .restListDetail {
     padding: 4% 3%;
   }
-}
-@media only screen and (max-width: 768px) {
-  .listingSection {
-    padding-top: 14%;
+  .filterSection {
+    margin-top: 8%;
+  }
+  .pagination {
+    margin: 5% 6%;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .filterSection {
     display: flex;
-    font-size: 0.7em;
+    font-size: 0.9em;
+    padding: 3% 5%;
+    margin-bottom: 3%;
+  }
+  .listingSection {
+    padding-top: 6vh;
   }
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 550px) {
   .listingSection {
-    padding-top: 17%;
+    padding-top: 8vh;
   }
 }
 @media only screen and (max-width: 500px) {
-  .listingSection {
-    padding-top: 22%;
-  }
   .filterSection {
     display: block;
   }
 }
 @media only screen and (max-width: 425px) {
   .listingSection {
-    padding-top: 25%;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .listingSection {
-    padding-top: 27%;
+    padding-top: 10vh;
   }
 }

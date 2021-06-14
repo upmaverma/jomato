@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
       no-repeat center center/cover;
   text-align: center;
@@ -17,10 +21,10 @@
   padding: 1em;
 }
 .contentHeading {
+  font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   word-spacing: 5px;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: 500;
 }
 .animatedSymbol {
   width: 10%;
@@ -34,13 +38,14 @@
     transform: rotate(-25deg);
   }
 }
+
 @media only screen and (min-width: 992px) {
   #selectCity,
   #selectRestaurent {
     margin-left: 7em;
   }
   #selectRestaurent {
-    width: 450px;
+    width: 130%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -53,16 +58,19 @@
     display: none;
   }
   .header {
-    padding-top: 12%;
+    padding-top: 15%;
   }
 }
 @media only screen and (max-width: 560px) {
   .header {
-    padding-top: 15%;
+    padding-top: 20%;
+  }
+  .contentHeading {
+    font-size: 1.8em;
   }
 }
 @media only screen and (max-width: 460px) {
   .header {
-    padding-top: 22%;
+    padding-top: 26%;
   }
 }

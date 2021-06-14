@@ -39,6 +39,10 @@ const renderRestaurentList = (props, data) => {
                         {item.time[2].name}
                       </p>
                       <p>Average Cost for per person:- Rs. {item.cost}</p>
+                      <p className="cuisineType">
+                        Cuisine Type :- {item.type[0].name} {item.type[1].name}{" "}
+                        {item.type[2].name}
+                      </p>
                     </div>
                   </div>
                 </div>

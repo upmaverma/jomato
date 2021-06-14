@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import "./placeorder.css";
+import { Link } from "react-router-dom";
 
 const url = "https://restaurentapilive.herokuapp.com/placeorder";
 
@@ -39,7 +40,7 @@ class orderplace extends Component {
           <div className="placeOrderContainer">
             <div className="card">
               <div className="card-header">
-                <h2>Place your order</h2>
+                <h2>Place your order here</h2>
               </div>
               <div className="card-body">
                 <form>
@@ -91,12 +92,14 @@ class orderplace extends Component {
                       onChange={this.handleChange}
                     />
                   </div>
-                  <button
-                    className="btn btn-success"
-                    onClick={this.handleSubmit}
-                  >
-                    Submit order
-                  </button>
+                  <Link to={"/booked"}>
+                    <button
+                      className="btn btn-success SubmitBtn"
+                      onClick={this.handleSubmit}
+                    >
+                      Submit order
+                    </button>
+                  </Link>
                 </form>
               </div>
             </div>

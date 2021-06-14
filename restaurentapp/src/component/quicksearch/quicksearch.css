@@ -1,60 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.quicksearchContent {
+  position: relative;
+  padding: 3%;
+  background-color: rgb(252, 241, 214);
+}
+.quickSectionHeading {
+  font-weight: 600;
+}
+.quickSectionPara {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+.menuTimePic {
+  width: 300px;
+  height: 200px;
+}
+.mealtimeContainer {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.mealCardContainer {
+  text-align: center;
+  padding-top: 4%;
+}
+.mealCard {
+  width: 27%;
+  margin: 0 5% 5% 0;
+  display: inline-block;
+  text-align: left;
+  border-radius: 10px;
+}
+.mealCard:hover {
+  box-shadow: 0 0 10px 7px rgb(123, 122, 122);
+  border-radius: 5px;
+}
+.card {
+  border: 2px solid rgb(123, 123, 123) !important;
+}
+.card-title,
+.card-text {
+  color: black;
+  text-transform: capitalize;
+}
+.card-title {
+  font-weight: 900;
+}
+.quickSearchIcon {
+  font-size: 30px;
+  font-weight: 200;
+}
+@media only screen and (max-width: 1024px) {
+  .quickSectionHeading {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mealCard {
+    width: 40%;
+  }
+}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
-*{
-    font-family: 'Proza Libre', sans-serif;
-}
-.quicksearchContent{
-    position: relative;
-    padding: 3%;
-    background-color: rgb(252, 241, 214);
-}
-.quickSectionHeading{
-    font-weight: 900;
-}
-.quickSectionPara{
-    font-size: 1em;
-    text-transform: capitalize;
-}
-.menuTimePic{
-    width: 300px;
-    height: 200px;
-}
-.mealCardContainer{
-    text-align: center;
-}
-.mealCard{
-    width: 27%;
-    margin: 0 5% 5% 0;
-    display: inline-block;
+@media only screen and (max-width: 768px) {
+  .mealCard {
+    width: 45%;
+  }
+  .mealCardContainer {
     text-align: left;
-    border-radius: 5px;
+  }
 }
-.mealCard:hover{
-    box-shadow: 0 0 10px 7px rgb(123, 122, 122);
-}
-.mealtimeContainer{
-    position: relative;
-    padding: 0 auto;
-}
-.card-title, .card-text{
-    color: black;
-    text-transform: capitalize;
-}
-.card-title{
-    font-weight: 900;
-}
-
-@media only screen and (max-width:768px){
-    .mealCard{
-        width: 45%;
-    }
-    .mealCardContainer{
-        text-align: left;
-    }
-}
-@media only screen and (max-width:425px){
-    .mealCard{
-        width: 100%;
-    }
+@media only screen and (max-width: 492px) {
+  .mealCard {
+    width: 100%;
+  }
+  .quicksearchContent {
+    padding-top: 7%;
+  }
+  .quickSectionPara {
+    font-size: 0.9em;
+    margin-top: 3%;
+  }
 }

@@ -16,15 +16,15 @@ const menulist = (props) => {
                 </center>
                 <div className="newMenuList">
                   <p>{item.type[0].menu[0].name}</p>
-                  <p>Rs. {item.type[0].menu[0].price}</p>
+                  <p>{item.type[0].menu[0].price}</p>
                 </div>
                 <div className="newMenuList">
                   <p>{item.type[0].menu[1].name}</p>
-                  <p>Rs. {item.type[0].menu[1].price}</p>
+                  <p>{item.type[0].menu[1].price}</p>
                 </div>
                 <div className="newMenuList">
                   <p>{item.type[0].menu[2].name}</p>
-                  <p>Rs. {item.type[0].menu[2].price}</p>
+                  <p>{item.type[0].menu[2].price}</p>
                 </div>
               </div>
               <div className="menuDetails">
@@ -33,15 +33,15 @@ const menulist = (props) => {
                 </center>
                 <div className="newMenuList">
                   <p>{item.type[1].menu[0].name}</p>
-                  <p>Rs. {item.type[1].menu[0].price}</p>
+                  <p>{item.type[1].menu[0].price}</p>
                 </div>
                 <div className="newMenuList">
                   <p>{item.type[1].menu[1].name}</p>
-                  <p>Rs. {item.type[1].menu[1].price}</p>
+                  <p>{item.type[1].menu[1].price}</p>
                 </div>
                 <div className="newMenuList">
                   <p>{item.type[1].menu[2].name}</p>
-                  <p>Rs. {item.type[1].menu[2].price}</p>
+                  <p>{item.type[1].menu[2].price}</p>
                 </div>
               </div>
               <div className="menuDetails">
@@ -50,15 +50,15 @@ const menulist = (props) => {
                 </center>
                 <div className="newMenuList">
                   <p>{item.type[2].menu[0].name}</p>
-                  <p>Rs. {item.type[2].menu[0].price}</p>
+                  <p>{item.type[2].menu[0].price}</p>
                 </div>
                 <div className="newMenuList">
                   <p>{item.type[2].menu[1].name}</p>
-                  <p>Rs. {item.type[2].menu[1].price}</p>
+                  <p>{item.type[2].menu[1].price}</p>
                 </div>
                 <div className="newMenuList">
                   <p>{item.type[2].menu[2].name}</p>
-                  <p>Rs. {item.type[2].menu[2].price}</p>
+                  <p>{item.type[2].menu[2].price}</p>
                 </div>
               </div>
             </div>
