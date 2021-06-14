@@ -128,9 +128,13 @@ button.slick-next {
   .detailSection {
     padding-top: 18%;
   }
-  .menuList {
-    display: none;
+  .menuDetails {
+    font-size: 0.8em;
   }
+  .menuDetails h4 {
+    font-size: 1.2em;
+  }
+
   .menuInfo {
     display: block;
   }
